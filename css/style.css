@@ -44,6 +44,8 @@ header .menuList li a{
 header .bottom{
     align-items: center;
     background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,7 +100,7 @@ main article{
     display: flex;
     flex-direction: column;
     height: 322px;
-    margin-bottom: 2rem;
+    margin:0 1rem 2rem;
     width: 240px;
 }
 
@@ -128,8 +130,10 @@ main .bottom{
 }
 
 main .starProductList{
+    justify-content: center;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 main .bottom h2{
@@ -144,7 +148,7 @@ main .starProduct1, main .starProduct2{
     color: white;
     font-size: 1rem;
     height: 108px;
-    margin-bottom: 2rem;
+    margin:0 1rem 2rem;
     padding: 2.5rem 2rem 2.5rem;
     text-align: end;
     width: 288px;
@@ -175,6 +179,7 @@ footer .top{
 footer .bottom{
     background-color: #C4C4C4;
     height: 25px;
+    padding: 0.2rem;
     text-align: center;
     font-size: 0.8rem;
 }
@@ -213,5 +218,33 @@ footer .fa-instagram{
     header .menuList{
         list-style: none;
         display: flex;
+    }
+
+    header .top .right{
+        display: flex;
+    }
+
+    header .fa-shopping-cart{
+        color: #D01418;
+        display: initial;
+        font-size: 1.5rem;
+    }
+    
+    header .fa-bars{
+        display: none;
+    }
+    header .bottom{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    main .starProductList{
+        flex-direction: row;
+    }
+
+    footer .top{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 4rem 0;
     }
 }
